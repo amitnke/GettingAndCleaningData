@@ -1,0 +1,281 @@
+srirl()
+swirl()
+head(flags)
+dim(flags)
+viewinfo()
+class(flags)
+cls_list <- lapply(flags, class)
+cls_list
+class(cls_list)
+as.character(cls_list)
+cls_vect <- sapply(flags, class)
+class(cls_vect)
+sum(flag$orange)
+sum(flags$orange)
+flag_colors <- flags[,11:17]
+q()
+ls()
+swirl()
+library(swirl)
+swirl()
+head(flag_colors)
+lapply(flag_colors, sum)
+sapply(flag_colors, sum)
+sapply(flag_colors, mean)
+flag_shapes <- flag[19:23]
+flag_shapes <- flags[19:23]
+flag_shapes <- flags[,19:23]
+lapply(flag_shapes, range)
+sapply(flag_shapes, range)
+info()
+shape_mat <- sapply(flag_shapes, range)
+shape_mat
+class(shape_mat)
+unique(c(3, 4, 5, 5, 5, 6, 6))
+lapply(flags, unique)
+unique_val <- lapply(flags, unique)
+unique_vals <- lapply(flags, unique)
+unique_vals
+lapply(unique_vals, lenght)
+lapply(unique_vals, length)
+sapply(unique_vals, length)
+sapply(flags, unique)
+lapply(unique_vals, function(elm)elm[2])
+sapply(flags, unique)
+vapply(flags, unique, numeric(1))
+ok()
+sapply(flags, class)
+vapply(flags, class, character(1))
+?taply
+?tapply
+table(flags$landmass)
+table(flags$animate)
+tapply(flags$animate, flags$landmass, mean)
+tapply(flags$population, flags$red,#
+| summary)
+tapply(flags$population, flags$red, summary)
+tapply(flags$population, flags$landmasses, summary)
+tapply(flags$landmasses, flags$landmasses, summary)
+tapply(flags$population, flags$landmasses, summary)
+tapply(flags$population, flags$landmass, summary)
+library(datasets)
+data(iris)
+head(iris)
+iris
+>iris
+?iris
+head(iris)
+tapply(iris$Sepal.Length, iris$Species, mean)
+apply(iris, 1, mean)
+apply(iris, 2, mean)
+colMeans(iris)
+names(iris)
+apply(iris[,1:4], 1, mean)
+apply(iris[,1:4], 2, mean)
+rowMeans(iris[,1:4])
+library(datasets)
+data(mtcars)
+names(mtcars)
+str(mtcars)
+tappy(mtcars$mpg, mtcars$cyl, mean)
+tapply(mtcars$mpg, mtcars$cyl, mean)
+tapply(mtcars[,c(16)], mtcars$cyl, mean)
+tapply(mtcars[,c(1,6)], mtcars$cyl, mean)
+apply(mtcars, 2, mean)
+split(mtcars$mpg, mtcars$cyl)
+sapply(split(mtcars$mpg, mtcars$cyl), mean)
+tapply(mtcars$mpg, mtcars$cyl, mean)
+sapply(mtcars, cyl, mean)
+tapply(mtcars$cyl, mtcars$mpg, mean)
+mean(mtcars$mpg, mtcars$cyl)
+with(mtcars, tapply(mpg, cyl, mean))
+tappy(mtcars$mpg, mtcars$cyl, mean)
+tapply(mtcars$mpg, mtcars$cyl, mean)
+rowMeans(iris[,1:4])
+apply(iris[,1:4], 2, mean)
+tapply(iris$Sepal.Length, iris$Species, mean)
+round(tapply(iris$Sepal.Length, iris$Species, mean))
+with(mtcars, tapply(mpg, cyl, mean))
+a <- with(mtcars, tapply(mpg, cyl, mean))
+a
+a[1]
+a[2]
+a[3]
+round(a[1] - a[3])
+debug(ls)
+ls
+ls()
+round(a[1] - a[3])
+a <- with(mtcars, tapply(mpg, cyl, mean))
+a
+round(tapply(iris$Sepal.Length, iris$Species, mean))
+apply(iris[, 1:4], 1, mean)
+apply(iris, 1, mean)
+apply(iris[, 1:4], 2, mean)
+mean(mtcars$mpg, mtcars$cyl)
+tapply(mtcars$mpg, mtcars$cyl, mean)
+sapply(mtcars, cyl, mean)
+sapply(split(mtcars$mpg, mtcars$cyl), mean)
+tapply(mtcars$hp, mtcars$cyl, mean)
+a <- tapply(mtcars$hp, mtcars$cyl, mean)
+a[3] - a[1]
+round(a[3] - a[1])
+apply(iris[, 1:4], 1, mean)
+tapply(mtcars$mpg, mtcars$cyl, mean)
+sapply(split(mtcars$mpg, mtcars$cyl), mean)
+round(a[3] - a[1])
+getwd()
+a <- 2
+a
+q()
+getwd()
+install.packages("installr")
+n <- 5000
+rad <- seq(0, 2*pi, length = n)
+rad[1:10]
+plot(rad, sin(rad))
+x <- replicate(n, rnorm(n))
+x[1:5, 1:5]
+hist(x[,1])
+sum(s %*% t(x))
+sum(x %*% t(x))
+q()
+set.seed(1)#
+rpois(5, 2)
+getwd()
+setwd("/Users/amitkumar")
+factorial <- function(a){#
+	loop <- function(acc, n){#
+		if(n==0) acc#
+		else loop(acc*n, n-1)#
+	}#
+	loop(1,a)#
+}
+factorial(4)
+factorial(30)
+factorial(100)
+factorial(400)
+factorial(300)
+factorial(200)
+factorial(150)
+factorial(160)
+factorial(170)
+factorial(180)
+factorial(175)
+factorial(173)
+factorial(172)
+factorial(171)
+factorial(170)
+factorial(3)
+factorial(5)
+cube <- function(a){#
+	a*a*a#
+}
+cube(3)
+sumCube <- function(a, b){#
+	if(a > b) 0 else cube(a) + sumCube(a+1,b)#
+}
+sumCube(3,30)
+sum <- function(f, a, b){#
+	if(a > b) 0#
+	else f(a) + sum(f, a+1, b)#
+}
+sum(cube, 1, 3)
+sum(factorial, 1, 3)
+factorial2 <- function(n) {#
+	n*factorial2(n-1)#
+}
+factorial(170)
+factorial2(170)
+factorial2(100)
+factorial2(70)
+factorial2(40)
+factorial2(20)
+factorial2(10)
+factorial2(4)
+factorial(170)
+factorial2(4)
+ls()
+factorial(170)
+factorial(140)
+q()
+getwd()
+setwd("/Users/amitkumar/R/GettingAndCleaning")
+setwd("/Users/amitkumar/R/GettingAndCleaningData")
+library(httr)
+oauth_endpoints("github")
+myapp <- oauth_app("github",#
+                     +                    key = "0aa76bbec365f317ceb1",#
+                     +                    secret = "1f3212914fd104f296a47e16c1009264fa45c566")
+myapp <- oauth_app("github",key = "0aa76bbec365f317ceb1",secret = "1f3212914fd104f296a47e16c1009264fa45c566")
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)
+req <- GET("https://api.github.com/rate_limit", gtoken)
+gtoken <- config(token = github_token)
+req <- GET("https://api.github.com/rate_limit", gtoken)
+stop_for_status(req)
+oauth_endpoints("github")#
+myapp <- oauth_app("github",key = "0aa76bbec365f317ceb1",secret = "1f3212914fd104f296a47e16c1009264fa45c566")#
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)#
+gtoken <- config(token = github_token)#
+req <- GET("https://api.github.com/rate_limit", gtoken)
+stop_for_status(req)
+oauth_endpoints("github")#
+myapp <- oauth_app("github",key = "0aa76bbec365f317ceb1",secret = "1f3212914fd104f296a47e16c1009264fa45c566")#
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)#
+gtoken <- config(token = github_token)#
+req <- GET("https://api.github.com/rate_limit", gtoken)
+stop_for_status(req)
+oauth_endpoints("github")#
+myapp <- oauth_app("github",key = "0aa76bbec365f317ceb1",secret = "1f3212914fd104f296a47e16c1009264fa45c566")#
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)#
+gtoken <- config(token = github_token)#
+req <- GET("https://api.github.com/rate_limit", gtoken)
+stop_for_status(req)
+req
+gtoken
+github_token
+req <- GET("https://api.github.com/users/jtleek/repos", config(token = github_token))
+stop_for_status(req)
+output <- content(req)
+list(output[[4]]$name, output[[4]]$created_at)
+oauth_app("github",key = "a86d97f9bac7ce8c94d5",secret = "71f48eda2b7540acd86d08765425fa7819c230ce")
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)
+gtoken <- config(token = github_token)
+req <- GET("https://api.github.com/users/jtleek/repos", gtoken)
+stop_for_status(req)
+myapp <- oauth_app("smita1407",key = "a86d97f9bac7ce8c94d5",secret = "71f48eda2b7540acd86d08765425fa7819c230ce")
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)
+install.packages("httpuv")
+(httpuv)require
+require(httpuv)
+oauth_endpoints("github")
+myapp <- oauth_app("github",key = "a86d97f9bac7ce8c94d5",secret = "71f48eda2b7540acd86d08765425fa7819c230ce")
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)
+gtoken <- config(token = github_token)
+req <- GET("https://api.github.com/users/jtleek/repos", gtoken)
+stop_for_status(req)
+output <- content(req)
+list(output[[4]]$name, output[[4]]$created_at)
+output
+class(output)
+names(list)
+list(output[[4]]$name, output[[4]]$created_at)
+data <- read.csv("getdata_wksst8110.for", header=T)
+output
+output$created_at
+list(output[[4]]$name, output[[4]]$created_at)
+a <- function(a){list(a[[4]]$name, a[[4]]$created_at)}
+lapply(output, a)
+lapply(a, output)
+lapply(output, a)
+a
+output[[4]]$name = "datasharing "
+output
+output <- content(req)
+list(output[[4]]$name, output[[4]]$created_at)
+list(output[[2]]$name, output[[2]]$created_at)
+list(output[[1]]$name, output[[1]]$created_at)
+list(output[[6]]$name, output[[6]]$created_at)
+list(output[[8]]$name, output[[8]]$created_at)
+q()
