@@ -32,6 +32,7 @@ head(reviews, 2)
 ##Fixing character vector- sub()
 names(reviews)
 names(reviews) <- sub("_","", names(reviews))
+class(names(reviews))
 names(solutions) <- sub("_","", names(solutions))
 #Fixing character vectors - gsub()
 testName <- "this_is_a_test"
